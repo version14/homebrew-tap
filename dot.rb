@@ -5,21 +5,21 @@
 class Dot < Formula
   desc "Universal project companion — scaffold and extend any project from the terminal."
   homepage "https://github.com/version14/dot"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/version14/dot/releases/download/v0.2.1/dot_0.2.1_darwin_amd64.tar.gz"
-      sha256 "3e67841695116b3d6b3c62fe477598efa833e8cd54ff2637de277332919314ab"
+      url "https://github.com/version14/dot/releases/download/v0.2.2/dot_0.2.2_darwin_amd64.tar.gz"
+      sha256 "8a63be3109b42d16b3c23ff58196db51e4b3a9a5f8c4ca9a7d3674e4fe687875"
 
       define_method(:install) do
         bin.install "dot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/version14/dot/releases/download/v0.2.1/dot_0.2.1_darwin_arm64.tar.gz"
-      sha256 "5f31c951dc2291d9e3014d3beb32741cedcda831bc9818d1b5440e2442374154"
+      url "https://github.com/version14/dot/releases/download/v0.2.2/dot_0.2.2_darwin_arm64.tar.gz"
+      sha256 "175b3605d1382479f621ea8ccf925eae8e40f689246bb139b4421dc71d3ee1c3"
 
       define_method(:install) do
         bin.install "dot"
@@ -29,15 +29,15 @@ class Dot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/version14/dot/releases/download/v0.2.1/dot_0.2.1_linux_amd64.tar.gz"
-      sha256 "d0401ac14cee33beaf1ad6747070226ebb6cf11843160298ac6bcc5c73b178bb"
+      url "https://github.com/version14/dot/releases/download/v0.2.2/dot_0.2.2_linux_amd64.tar.gz"
+      sha256 "f7c5b8511a96e3c66867bbdfc310caf01605c722f5203b32016c259f831e7ed2"
       define_method(:install) do
         bin.install "dot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/version14/dot/releases/download/v0.2.1/dot_0.2.1_linux_arm64.tar.gz"
-      sha256 "464bc110736581eeb8aa276d93dc2c00e85f336935732b0fb8bf4ec638002123"
+      url "https://github.com/version14/dot/releases/download/v0.2.2/dot_0.2.2_linux_arm64.tar.gz"
+      sha256 "c7b5078c8a74131d9db87b39c3aaad5669a31a49963f1a0f01aee7dfe1b78a54"
       define_method(:install) do
         bin.install "dot"
       end
